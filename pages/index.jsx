@@ -199,22 +199,9 @@ export default function HackerConstruction() {
           {/* Botão de doação Stripe */}
           {showDonateButton && (
             <div className="mt-3 sm:mt-4 text-center px-2 animate-fade-in">
-              {/* Botão Stripe */}
-              <div className="flex justify-center mb-3">
-                <stripe-buy-button
-                  buy-button-id="buy_btn_1SP8t906T0dNokxCR6KgDAH2"
-                  publishable-key="pk_live_51PTIym06T0dNokxC6IdlD4mModkCndNF6PxQPSC5y2DkjfbHXbRGOdIjPeJwYQ9pgzLZaeYZIqsFGEiSRHz5oY4s00vNC1rn58"
-                />
-              </div>
-
               <div className="mt-3 space-y-1">
                 <p className="text-yellow-400 text-sm sm:text-base font-semibold">
                   ☕ Deploy travado por falta de cafeína!
-                </p>
-                <p className="text-gray-400 text-xs sm:text-sm">
-                  Me ajude com um café para finalizar esta página.
-                  <br />
-                  Cada doação acelera o desenvolvimento! 🚀
                 </p>
                 <p className="text-gray-600 text-xs mt-2">
                   <a
