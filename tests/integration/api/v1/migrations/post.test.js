@@ -1,15 +1,13 @@
 import database from "infra/database";
-
-async function refreshDatabase() {
-  await database.query("drop schema public cascade; create schema public;");
-}
+import orchestrator from "tests/orchestrator";
 
 describe("post - migrations endpoint", () => {
   let response;
   let body;
 
   beforeAll(async () => {
-    await refreshDatabase();
+    await orchestrator.waitForAllServices();
+    await database.query("drop schema public cascade; create schema public;");
 
     response = await fetch("http://localhost:3000/api/v1/migrations", {
       method: "POST",
