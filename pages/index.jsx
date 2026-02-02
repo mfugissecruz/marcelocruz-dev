@@ -5,9 +5,7 @@ export default function ComingSoon() {
   return (
     <>
       <Head>
-        <title>
-          marcelocruz.dev | Desenvolvedor Web
-        </title>
+        <title>marcelocruz.dev | Desenvolvedor Web</title>
         <meta
           name="description"
           content="Marcelo Cruz - Desenvolvedor Web especializado em PHP, Laravel, criação de sites e landing pages."
@@ -137,7 +135,9 @@ export default function ComingSoon() {
         {/* Footer */}
         <footer className="text-center text-neutral-400 dark:text-neutral-600 text-xs sm:text-sm relative z-10">
           <p className="italic">Soli Deo Gloria</p>
-          <p className="mt-1">{new Date().getFullYear()} &copy; marcelocruz.dev</p>
+          <p className="mt-1">
+            {new Date().getFullYear()} &copy; marcelocruz.dev
+          </p>
         </footer>
       </div>
 
